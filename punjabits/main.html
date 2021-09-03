@@ -49,9 +49,9 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     }
 
     /* Create a Parallax Effect */
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
+    #bgimg-1,
+    #bgimg-2,
+    #bgimg-3 {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -59,19 +59,19 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     }
 
     /* First image (Logo. Full height) */
-    .bgimg-1 {
+    #bgimg-1 {
         background-image: 'header.svg';
         min-height: 100%;
     }
 
     /* Second image (Portfolio) */
-    .bgimg-2 {
+    #bgimg-2 {
         background-image: "bg.jpg";
         min-height: 50%;
     }
 
     /* Third image (Contact) */
-    .bgimg-3 {
+    #bgimg-3 {
         background-image: "image.png";
         min-height: 400px;
     }
@@ -89,9 +89,9 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1080px) {
 
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
+        #bgimg-1,
+        #bgimg-2,
+        #bgimg-3 {
             background-attachment: scroll;
             min-height: 50%;
         }
@@ -120,7 +120,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     </div>
 
     <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container" id="home">
+    <div id="bgimg-1" class="w3-display-container" id="home">
     </div>
 
     <!-- Container (About Section) -->
@@ -167,7 +167,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div id="bgimg-2" class="w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-black w3-hover-text-blue"><b><i>Punjabi for All</i></b></span>
         </div>
