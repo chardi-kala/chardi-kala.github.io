@@ -26,7 +26,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
 <meta property="twitter:image" content="header.jpg">
 
 <link rel="icon" href="logo.svg" type="image/gif" sizes="16x16">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -50,31 +50,36 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     }
 
     /* Create a Parallax Effect */
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    
+    .mb_parallax_container {
+      min-height: 100%;
+      min-width: 100%;
+      border-bottom: 10px solid black;
+      padding-top: 20vh;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .mb_parallax_overlay {
+      height: 25%;
+      width: 25%;
+      margin: auto;
+      background-color: rgba(255, 177, 0, 1);
+      opacity: .9;
     }
 
     /* First image (Logo. Full height) */
-    .bgimg-1 {
-        background-image: 'header.jpg';
+    #bgimg-1 {
+        background-image: url('header.svg');
         min-height: 100%;
     }
 
     /* Second image (Portfolio) */
-    .bgimg-2 {
-        background-image: "bg.jpg";
+    #bgimg-2 {
+        background-image: url('bg.jpg');
         min-height: 50%;
-    }
-
-    /* Third image (Contact) */
-    .bgimg-3 {
-        background-image: "image.png";
-        min-height: 400px;
     }
     
     .material-icons {vertical-align:-14%}
@@ -90,9 +95,9 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1080px) {
 
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
+        #bgimg-1,
+        #bgimg-2,
+        .mb_parallax_container {
             background-attachment: scroll;
             min-height: 50%;
         }
@@ -108,7 +113,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange"><i class="material-icons w3-spin">home</i>HOME</a>
+            <a href="#bgimg-1" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange"><i class="material-icons w3-spin">home</i>HOME</a>
             <a href="#about" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange w3-hide-small"><i class="fa fa-user w3-spin"></i> ABOUT</a>
             <a href="#contact" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange w3-hide-small"><i class="fa fa-envelope w3-spin"></i> CONTACT</a>
         </div>
@@ -121,8 +126,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     </div>
 
     <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 container-fluid" id="home">
-    </div>
+    <div class="mb_parallax_container" id="bgimg-1"></div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
@@ -151,7 +155,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
         </div>
     </div>
 
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-row w3-center w3-amber w3-padding-16">
         <div class="w3-quarter w3-section">
             <span class="w3-xlarge">100+</span><br>
             Satisfied Users
@@ -159,7 +163,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
         <div class="w3-half w3-section">
             <span class="w3-xlarge">1</span><br>
             Goal<br/>
-            <i class="material-icons w3-xxlarge">play_for_work</i>
+            <i class="material-icons w3-xxlarge" style="text-shadow:1px 1px 0 #444">play_for_work</i>
         </div>
         <div class="w3-quarter w3-section">
             <span class="w3-xlarge">40+</span><br>
@@ -168,12 +172,15 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-black w3-hover-text-blue"><b><i>Punjabi for All</i></b></span>
+    <div class="mb_parallax_container" id="bgimg-2">
+        <div class="mb_parallax_overlay">
+            <figure class="fst-italic text-dark text-center">
+                <blockquote class="blockquote">
+                  <p class="fw-bold fs-1">Punjabi for All</p>
+                </blockquote>
+              </figure>
         </div>
     </div>
-    <hr>
 
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
