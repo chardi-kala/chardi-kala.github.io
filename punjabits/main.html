@@ -249,7 +249,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
   <script>
 
     // Add Adsense Client
-    var client_id = secret.ADMOB_CLIENT_ID; 
+    var client_id = process.env.AD_ID; 
     var url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=$client_id";
     document.head.script.src = url;
 
