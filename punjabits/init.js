@@ -1,5 +1,5 @@
 window.process = {
     env: {
-        AD_ID : ${{secret.AD_CLIENT_ID}}
+        AD_ID : secrets.AD_CLIENT_ID
     }
 }
