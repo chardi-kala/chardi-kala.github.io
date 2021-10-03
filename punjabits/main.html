@@ -249,12 +249,10 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
   <script>
 
     // Add Adsense Client
-    var client_id = env.AD_ID; 
-    if (client_id == null) {
-      client_id = secret.AD_CLIENT_ID
-    }
-    var url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + client_id;
-    document.head.script.src = url;
+    var client_id = env.AD_ID;
+    var src_go = document.head.script;
+    src_go.async = true;
+    src_go.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + client_id;
 
     // Change style of navbar on scroll
     window.onscroll = function () { myFunction() };
