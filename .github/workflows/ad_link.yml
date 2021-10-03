@@ -19,6 +19,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo AD_CLIENT_ID
+      - run: echo $AD_CLIENT_ID
         env:
           AD_CLIENT_ID: ${{secrets.AD_CLIENT_ID}}
