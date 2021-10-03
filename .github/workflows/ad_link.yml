@@ -20,4 +20,3 @@ jobs:
     steps:
       - run: export AD_CLIENT_ID=AD_ID
       - run: echo $AD_ID
-      - run: ./punjabits/main/init.js
