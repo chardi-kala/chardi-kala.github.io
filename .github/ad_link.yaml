@@ -1,0 +1,5 @@
+- name: Info AD
+  env:
+    AD_CLIENT_ID = ${{ secrets.ADMOB_CLIENT_ID }}
+  run:
+    nbdev_test_nbs
