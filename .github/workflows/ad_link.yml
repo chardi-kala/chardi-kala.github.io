@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - run: env
       - run: echo $AD_CLIENT_ID
         env:
           AD_CLIENT_ID: ${{secrets.ADMOB_CLIENT_ID}}
