@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2397746136854814"
+     crossorigin="anonymous"></script>
   <!-- Primary Meta Tags -->
   <title>Punjabits - Let's Learn Punjabi</title>
   <meta charset="UTF-8">
@@ -248,8 +250,8 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
 
   // Add Adsense Client
   var client_id = process.env.ADMOB_CLIENT_ID;
-  var code = "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=$client_id\" crossorigin=\"anonymous\"></script>";
-  document.head.prepend()
+  var url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=$client_id";
+  document.head.script.src = url;
 
   // Change style of navbar on scroll
   window.onscroll = function () { myFunction() };
