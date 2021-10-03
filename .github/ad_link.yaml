@@ -1,3 +1,4 @@
+name: Info AD
 on:
   # Trigger the workflow on push or pull request,
   # but only for the main branch
@@ -12,8 +13,10 @@ on:
   release:
     types: # This configuration does not affect the page_build event above
       - created
-- name: Info AD
-  env:
-    AD_CLIENT_ID = ${{ secrets.AD_CLIENT_ID }}
-  run:
-    echo: "::add-mask::env.AD_CLIENT_ID"
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "::add-mask::env.AD_CLIENT_ID"
