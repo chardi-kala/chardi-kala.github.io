@@ -28,6 +28,8 @@ jobs:
           node-version: 12.x
       - name: Install dependencies
         run: yarn install --frozen-lockfile --production
+      - name: Node run
+        run: node punjabits/init.js
         env:
           CI: true
           ADMOB_CLIENT_ID: ${{ secrets.ADMOB_CLIENT_ID }}
