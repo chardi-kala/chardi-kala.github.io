@@ -1,2 +1,2 @@
 require('dotenv').config()
-const AD_ID = process.env.ADMOB_CLIENT_ID
+const AD_ID = process.env.AD_ID
