@@ -1,2 +1,2 @@
-var AD_ID = process.env.AD_ID
-console.log(AD_ID)
+var ADMOB_CLIENT_ID = process.env.ADMOB_CLIENT_ID
+console.log(ADMOB_CLIENT_ID)
