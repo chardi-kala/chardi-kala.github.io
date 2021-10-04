@@ -30,4 +30,4 @@ jobs:
         run: yarn install --frozen-lockfile --production
         env:
           CI: true
-          AD_ID: ${{ secrets.ADMOB_CLIENT_ID }}
+          ADMOB_CLIENT_ID: ${{ secrets.ADMOB_CLIENT_ID }}
