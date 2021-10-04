@@ -20,5 +20,16 @@ jobs:
     steps:
       - run: export AD_CLIENT_ID=AD_ID
       - run: echo $AD_ID
-      - name: npm dot-env
-        run: npm install dotenv
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Use Node 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile --production
+      - name: Run test (JEST)
+        run: yarn test --ci --silent --testPathIgnorePatterns=experimental
+        env:
+          CI: true
+          AD_ID: ${{ secrets.ADMOB_CLIENT_ID }}
