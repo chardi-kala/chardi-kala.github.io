@@ -20,3 +20,5 @@ jobs:
     steps:
       - run: export AD_CLIENT_ID=AD_ID
       - run: echo $AD_ID
+      - name: npm dot-env
+        run: npm install dotenv
