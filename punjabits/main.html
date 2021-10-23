@@ -2,15 +2,6 @@
 <html>
 
 <head>
-  <script type+'text/javascript' src="init.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>   
-      (adsbygoogle = window.adsbygoogle || []).push({
-             google_ad_client: ADMOB_CLIENT_ID,
-             enable_page_level_ads: true
-         });
-      
-  </script>
   <!-- Primary Meta Tags -->
   <title>Punjabits - Let's Learn Punjabi</title>
   <meta charset="UTF-8">
@@ -135,11 +126,13 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
         <i class="fa fa-bars"></i>
       </a>
       <a href="#bgimg-1" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange"><i
-          class="material-icons w3-spin">home</i>HOME</a>
+          class="fa fa-home w3-spin"></i>HOME</a>
       <a href="#about" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange w3-hide-small"><i
           class="fa fa-user w3-spin"></i> ABOUT</a>
       <a href="#contact" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange w3-hide-small"><i
           class="fa fa-envelope w3-spin"></i> CONTACT</a>
+      <a href="#translate" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange w3-hide-small"><i
+        class="fa fa-language w3-spin"></i>TRANSLATE</a>
     </div>
 
     <!-- Navbar on small screens -->
@@ -148,6 +141,8 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
         ABOUT</a>
       <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope w3-spin"></i>
         CONTACT</a>
+      <a href="#translate" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-language w3-spin"></i>
+        TRANSLATE</a>
     </div>
   </div>
 
@@ -161,18 +156,18 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     <div class="w3-center">
       <button class="w3-btn w3-xlarge w3-round-large w3-teal w3-hover-black"
         onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.truth.learnpanjabi';"><i
-          class="material-icons w3-xlarge">android</i> Download Now!</button>
+          class="fa fa-android w3-xlarge"></i> Download Now!</button>
       <br><br>
       <button class="w3-btn w3-xlarge w3-round-large w3-teal w3-hover-black"
-        onclick="window.location.href = 'https://bit.ly/PunjabiClass';"><i class="material-icons w3-xlarge">token</i>
+        onclick="window.location.href = 'https://bit.ly/PunjabiClass';"><i
+          class="fa fa-book w3-xlarge"></i>
         Register Now!</button>
     </div>
     <div class="w3-center">
       <div class="w3-center" style="width:100%; margin-left: auto; margin-right: auto;">
         <button onclick="accFunction('who')" class="w3-btn w3-block w3-hover-black">
           <h4>
-            <p><b><i class="fa fa-book w3-margin-right"></i>Punjabits<span
-                  class="material-icons">arrow_drop_down</span></b></p>
+            <p><b>Punjabits <i class="fa fa-caret-down w3-xlarge"></i></b></p>
           </h4>
         </button>
       </div><br>
@@ -207,7 +202,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     <div class="w3-half w3-section">
       <span class="w3-xlarge">1</span><br>
       Goal<br />
-      <i class="material-icons w3-xxlarge" style="text-shadow:1px 1px 0 #444">play_for_work</i>
+      <i class="fa fa-arrow-down w3-xxlarge" style="text-shadow:1px 1px 0 #444"></i>
     </div>
     <div class="w3-quarter w3-section">
       <span class="w3-xlarge">500+</span><br>
@@ -240,7 +235,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
           <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Delhi, IN<br>
           <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
           letslearnpanjabi@gmail.com<br>
-          <i class="material-icons w3-hover-text-black w3-xlarge w3-margin-right">sentiment_very_satisfied</i>
+          <i class="fa fa-handshake-o w3-hover-text-black w3-xlarge w3-margin-right"></i>
           Experience learning!
         </div>
       </div>
@@ -248,9 +243,16 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
   </div>
 
   <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64 w3-hover-orange">
+  <footer id="translate" class="w3-center w3-black w3-padding-64 w3-hover-orange">
     <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <h4><b>The Smiling Singh👳‍♂️</b></h4>
+    <div id="google_translate_element"></div>
+      <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+          }
+      </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </footer>
 
   <script>
