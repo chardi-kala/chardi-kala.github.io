@@ -1,134 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Lato", sans-serif;
+}
+
 body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Lato", sans-serif;
-    }
-
-    body,
-    html {
-      height: 100%;
-      color: #777;
-      line-height: 1.8;
-    }
-
-    /* Create a Parallax Effect */
-
-    .mb_parallax_container {
-      min-height: 100%;
-      min-width: 100%;
-      border-bottom: 10px solid black;
-      padding-top: 20vh;
-      background-position: center;
-      background-attachment: fixed;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    .mb_parallax_overlay {
-      height: 25%;
-      width: 25%;
-      margin: auto;
-      background-color: rgba(255, 177, 0, 1);
-      opacity: .9;
-    }
-
-    /* First image (Logo. Full height) */
-    #bgimg-1 {
-      background-image: url('header.svg');
-      min-height: 100%;
-    }
-
-    /* Second image (Portfolio) */
-    #bgimg-2 {
-      background-image: url('bg.jpg');
-      min-height: 50%;
-    }
-
-    .material-icons {
-      vertical-align: -14%
-    }
-
-    .w3-wide {
-      letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-      cursor: pointer;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1080px) {
-
-      #bgimg-1,
-      #bgimg-2,
-      .mb_parallax_container {
-        background-attachment: scroll;
-        min-height: 50%;
-      }
-
-      .mb_parallax_overlay {
-        height: 50%;
-        width: 50%;
-      }
-    }
-/* Additionnal styles */
-.video-slider {
-    width: 100%;
-    height: 20em;
-    background: #444;
-    position: relative;
-    overflow: hidden;
+html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
 }
-.slide {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
+/* Create a Parallax Effect */
+.mb_parallax_container {
+    background-image: url('header.svg');
+    min-height: 100%;
+    min-width: 100%;
+    border-bottom: 10px solid black;
+    padding-top: 20vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.slide:first-child{
-    left: 0;
+.new_para {
+    background-image: url('header.svg');
+    min-height: 100%;
+    min-width: 100%;
+    padding: 25px;
+    border-bottom: 10px solid black;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.video{
-    height: 100%;
-    width: 100%;
-    border:0;
+.mb_parallax_overlay {
+  height: 25%;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  word-wrap: normal;
+  background-color: rgba(255, 177, 0, 1);
+  opacity: .9;
 }
-.slide-arrow{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 45%;
-    width: 15%;
-    cursor: pointer;
-    opacity: .2;
+/* Second image (Portfolio) */
+#bgimg-2 {
+  background-image: url('bg.jpg');
+  min-height: 50%;
 }
-.slide-arrow:hover{
-    opacity: 1;
+.material-icons {
+  vertical-align: -14%
 }
-.slide-arrow:after{
-    content: "\003c";
-    text-align: center;
-    display: block;
-    height: 10%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 3em;
+.w3-wide {
+  letter-spacing: 10px;
 }
-.slide-arrow.right:after{
-    content: "\003e";
+.w3-hover-opacity {
+  cursor: pointer;
 }
-.slide-arrow.right{
-    left: auto;
-    right: 0;
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1080px) {
+  #bgimg-2,
+  .mb_parallax_container {
+    background-attachment: scroll;
+    min-height: 50%;
+  }
+  .new_para {
+    background-attachment: scroll;
+    min-height: 40%;
+    padding: 10px;
+    background-size:auto;
+  }
+  .mb_parallax_overlay {
+    height: 50%;
+    width: 50%;
+  }
+}
+.mySlides {display:flex;height: 100%; width: 80%;}
+iframe {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.navio {
+    align-items: center;
+    margin:auto;
+    width: 100px;
+    border-style: groove;
+    border-radius: 50px;
+    background-color: white;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(255, 251, 251);
+  border-radius: 50%;
+  border-style: inset;
+  border-color: black blue;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(255, 177, 0, 1);
+}
+a {
+    text-decoration: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 .goog-te-banner-frame.skiptranslate { display: none !important;} 
 body { top: 0px !important; }
