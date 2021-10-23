@@ -36,85 +36,6 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Lato", sans-serif;
-    }
-
-    body,
-    html {
-      height: 100%;
-      color: #777;
-      line-height: 1.8;
-    }
-
-    /* Create a Parallax Effect */
-
-    .mb_parallax_container {
-      min-height: 100%;
-      min-width: 100%;
-      border-bottom: 10px solid black;
-      padding-top: 20vh;
-      background-position: center;
-      background-attachment: fixed;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    .mb_parallax_overlay {
-      height: 25%;
-      width: 25%;
-      margin: auto;
-      background-color: rgba(255, 177, 0, 1);
-      opacity: .9;
-    }
-
-    /* First image (Logo. Full height) */
-    #bgimg-1 {
-      background-image: url('header.svg');
-      min-height: 100%;
-    }
-
-    /* Second image (Portfolio) */
-    #bgimg-2 {
-      background-image: url('bg.jpg');
-      min-height: 50%;
-    }
-
-    .material-icons {
-      vertical-align: -14%
-    }
-
-    .w3-wide {
-      letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-      cursor: pointer;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1080px) {
-
-      #bgimg-1,
-      #bgimg-2,
-      .mb_parallax_container {
-        background-attachment: scroll;
-        min-height: 50%;
-      }
-
-      .mb_parallax_overlay {
-        height: 50%;
-        width: 50%;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -126,12 +47,14 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
         onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="#bgimg-1" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange"><i
+      <a href="#home" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange"><i
           class="fa fa-home w3-spin"></i>HOME</a>
       <a href="#about" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange w3-hide-small"><i
           class="fa fa-user w3-spin"></i> ABOUT</a>
       <a href="#contact" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange w3-hide-small"><i
           class="fa fa-envelope w3-spin"></i> CONTACT</a>
+      <a href="#wonders" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange w3-hide-small"><i
+        class="fa fa-star w3-spin"></i>WONDERS</a>
       <a href="#translate" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange w3-hide-small"><i
         class="fa fa-language w3-spin"></i>TRANSLATE</a>
     </div>
@@ -142,14 +65,15 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
         ABOUT</a>
       <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope w3-spin"></i>
         CONTACT</a>
+      <a href="#wonders" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-star w3-spin"></i>
+        WONDERS</a>
       <a href="#translate" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-language w3-spin"></i>
         TRANSLATE</a>
     </div>
   </div>
 
   <!-- First Parallax Image with Logo Text -->
-  <div class="mb_parallax_container" id="bgimg-1">
-    <div id="home"></div>
+  <div class="mb_parallax_container" id="home">
   </div>
 
   <!-- Container (About Section) -->
@@ -164,6 +88,7 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
           class="fa fa-book w3-xlarge"></i>
         Register Now!</button>
     </div>
+    <br/>
     <div class="w3-center">
       <div class="w3-center" style="width:100%; margin-left: auto; margin-right: auto;">
         <button onclick="accFunction('who')" class="w3-btn w3-block w3-hover-black">
@@ -193,6 +118,44 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
     <h6 class="w3-center">An initiative by humble volunteers to make everything accessible to everyone, our app releases
       will revolutionize your learning experience..</h6>
   </div>
+  </div>
+
+  <div class="new_para" id="wonders">
+    <div class="mb_parallax_overlay">
+      <figure class="fst-italic text-dark text-center">
+        <blockquote class="blockquote">
+          <p class="fw-bold fs-1">Our Wonders</p>
+        </blockquote>
+      </figure>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <div style="position: relative; height: 0; padding-bottom: 56.25%; /* 16/9 ratio */ border-style: none;"><iframe style="position:absolute; top: 0; left:15%;width: 100%; height: 100%;" src="https://www.youtube.com/embed/YyDghEACq9U"></iframe></div>
+      </div>
+  
+      <div class="mySlides">
+        <div style="position: relative; height: 0; padding-bottom: 56.25%; /* 16/9 ratio */ border-style: none;"><iframe style="position:absolute; top: 0; left:15%;width: 100%; height: 100%;" src="https://www.youtube.com/embed/xizT33Lc4Wo"></iframe></div>
+      </div>   
+      
+      <div class="mySlides">
+        <div style="position: relative; height: 0; padding-bottom: 56.25%; /* 16/9 ratio */ border-style: none;"><iframe style="position:absolute; top: 0; left:15%;width: 100%; height: 100%;" src="https://www.youtube.com/embed/WIrbLATaar8"></iframe></div>
+      </div>
+
+      <div class="mySlides">
+        <div style="position: relative; height: 0; padding-bottom: 56.25%; /* 16/9 ratio */ border-style: none;"><iframe style="position:absolute; top: 0; left:15%;width: 100%; height: 100%;" src="https://www.youtube.com/embed/igpSCGX9m1w"></iframe></div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+    </div>
+    <br>
+    <div class="navio" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
   </div>
 
   <div class="w3-row w3-center w3-amber w3-padding-16">
@@ -256,8 +219,9 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
       <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
   <script>
-
     // Change style of navbar on scroll
     window.onscroll = function () { myFunction() };
     function myFunction() {
@@ -289,6 +253,33 @@ Weekend classes with incredible Quizzes to make learning unforgettable😎">
       } else {
         x.className += " w3-show"
       }
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
     }
   </script>
 
