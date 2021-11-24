@@ -5,15 +5,17 @@
   --user-button-text:#323133;
   --user-button-shadow:rgba(0,0,0,0.1);
 }
-
 body {
+  height: 100%;
+}
+.body {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow:hidden;
+  overflow-x:visible;
   height: 100vh;
-  margin: 10px;
   font-family: "Roboto", sans-serif;
   transition: 0.25s;
 }
@@ -150,9 +152,10 @@ body .options .option .label .info .sub {
   transition-delay: 0.1s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
   body .options {
-    min-width: 390px;
+    padding-left: 50px;
+    min-width: 440px;
     height: 200px; 
     overflow-x: visible;
   }
@@ -162,6 +165,7 @@ body .options .option .label .info .sub {
   body .options .option.active {
     width: 100px;
     border-radius: 10px;
+    margin-left: 5px;
   }
   body .options .option .label {
     height: 30px;
