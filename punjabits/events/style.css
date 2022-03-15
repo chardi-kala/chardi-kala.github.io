@@ -1,0 +1,22 @@
+#more {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 25px;
+    justify-content: center;
+    padding: 10px;
+}
+.inmore {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    justify-content: center;
+    /* 16/9 ratio */
+    border-style: none;
+}
+@media screen and (max-width: 1000px) {
+    .inmore {
+        height: 300px;
+        width: 500px;
+    }
+}

@@ -1,15 +1,3 @@
-
-  .new_para {
-    background-image: url('../header.svg');
-    height: 100%;
-    min-width: 100%;
-    padding: 25px;
-    border-bottom: 10px solid black;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 img:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
@@ -31,51 +19,3 @@ img:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-  .mb_parallax_overlay {
-    height: 100%;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    word-wrap: normal;
-    background-color: rgba(255, 177, 0, 1);
-    opacity: .9;
-  }
-
-  .vimage {
-    width:24.5%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
-  .himage {
-    width:24.5%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
-  .hwimage {
-    width:49.8%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
-  .simage {
-    width:33%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
-
-  /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1080px) {
-    .new_para {
-      background-attachment: scroll;
-      min-height: 40%;
-      padding: 10px;
-      background-size:auto;
-    }
-    .mb_parallax_overlay {
-      height: 50%;
-      width: 50%;
-    }
-  }
