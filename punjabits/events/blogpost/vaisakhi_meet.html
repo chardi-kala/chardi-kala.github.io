@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Primary Meta Tags -->
+  <title>Punjabits - Let's Learn Punjabi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Punjabits - Let's Learn Punjabi">
+  <meta name="description" content="Explore our Mother tongue, Punjabi in a fun and interactive way like never before 🤩
+Weekend classes with incredible Quizzes to make learning unforgettable😎">
+  <meta name="keywords"
+    content="Punjabits, Learn Punjabi, ਪੰਜਾਬੀ, Mother Tongue, most widely spoken language, Incredible Quizzes, Quiz, The Smiling Singh, Let's Learn Punjabi, 100+ downloads">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chardi-kala.github.io/punjabits/main">
+  <meta property="og:title" content="Punjabits - Let's Learn Punjabi">
+  <meta property="og:description" content="Explore our Mother tongue, Punjabi in a fun and interactive way like never before 🤩
+Weekend classes with incredible Quizzes to make learning unforgettable😎">
+  <meta property="og:image" content="header.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://chardi-kala.github.io/punjabits/main">
+  <meta property="twitter:title" content="Punjabits - Let's Learn Punjabi">
+  <meta property="twitter:description" content="Explore our Mother tongue, Punjabi in a fun and interactive way like never before 🤩
+Weekend classes with incredible Quizzes to make learning unforgettable😎">
+  <meta property="twitter:image" content="header.jpg">
+
+  <link rel="icon" href="../../logo.svg" type="image/gif" sizes="16x16">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+          onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+      </a>
+      <a href="../index.html" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange"><i
+          class="fa fa-hand-o-left w3-spin"></i>BACK</a>
+      <a href="../../main.html" class="w3-bar-item w3-button w3-round-large w3-black w3-hover-orange"><i
+          class="fa fa-home w3-spin"></i>HOME</a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-orange w3-hide w3-hide-large w3-hide-medium">
+      <a href="../index.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-hand-o-left w3-spin"></i>
+          BACK</a>
+      <a href="../../main.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-home w3-spin"></i>
+          HOME</a>
+      <a href="../../events/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-star w3-spin"></i>
+        EVENTS</a>
+      <a href="../../gallery/gallery.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-image w3-spin"></i>
+        GALLERY</a>
+      <a href="team/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user w3-spin"></i>
+        ABOUT</a>
+      </div>
+  </div>
+    <div class="mid-upper" style="background-image: url('./images/khandabg.png'); background-color: #FC9032;">
+        <br/><br/><br/><br/><br/><br/>
+        <p class="title">
+            Vaisakhi Meet '22
+        </p>
+        <br/><br/><br/><br/><br/><br/>
+    </div>
+    <section class="container">
+      <div class="w3-third container">
+        <div class="w3-round" style="width:80%;" onclick="changePoster()">
+            <div class="w3-row w3-center">
+              <div class="w3-col s11 m11 l11 w3-card-4"><img src="./images/punVaisakhiPoster.jpeg" id="poster" class="w3-round" alt="posterPunjabi" style="display: inline; width:100%; height: 100%; cursor: pointer;"></div>
+              <div class="w3-col s1 m1 l1"><span style="writing-mode: vertical-rl; display: inline;" id="posterTxt">Click Image for English poster!</span></div>
+            </div>
+          </div>
+      </div>
+
+      <div class="w3-twothird container written">
+          <strong><em>Waheguru ji ka Khalsa,<br/>
+          Waheguru ji ki Fateh</em></strong><br/><br/>
+          <p class="starter"><em>Vaisakhi Punjabi Kids Meet</em> organised by <strong>Punjabits - Learn Punjabi</strong> a project of Global Sikh Council, was a great success. Kids of all ages, from across the Globe participated and celebrated Vaisakhi.</p>
+          <p class="content">Event was opened by a Poem on Maa Boli Punjabi, followed by Introduction of the Project and the Mentors by Gulbarg Singh Basi and Harpreet Kaur. <br/>Kids met each other, performed on Maa Boli Punjabi in form of Poems and Acts.<br/>There was an Art and Craft activity ‘Sanjh’ by Paramdeep Kaur ji which kids enjoyed a lot. Thereafter we had another round of Performances by kids.<br/> Nevertheless, we set up a Section for Feedback and suggestions, which was followed by Thanksgiving to all the wonderful Kids, their parents and all Mentors, without whom the event couldn’t have been such a success.</p>
+          <p class="content">Event was opened by a brief introduction about the Festival of Vaisakhi by Harpreet Kaur.<br/> Then, we proceeded with fantastic Vaisakhi celebration video presentation by Kids Club Punjabi, Sutton Coldfield, United Kingdom prepared by Harpreet Kaur (Mentor from U, K).<br/>Moreover, there were Live performance by Kids as well, they played Dhol and performed Bhangra, Gidda, Poems and Speech.<br/> There was a Vaisakhi Craft activity by Paramdeep Kaur which kids enjoyed a lot. <br/>Thereafter, there was a Quiz by Jessie Kaur, kids liked it very much, they answered interactively using the Chatbox.<br/> Furthermore, there was another round of Performances by kids. Nevertheless, there was Thanksgiving to all the wonderful Kids, their parents and the all Mentors by S. Gulbarg Singh and Harpreet Kaur, without whom the event couldn’t have been such a success and with everyone's support we got the chance to see such wonderful performances.</p>
+      </div>
+    </section>
+
+    <!-- Will be changed as per videos' availability-->
+    <section class="container">
+      <div class="w3-half">
+        <div class="inmore">
+          <iframe src="https://www.youtube.com/embed/tf7zmdJXJnI"></iframe>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="inmore">
+          <iframe src="https://www.youtube.com/embed/Uuqv7boMX3s"></iframe>
+        </div>
+      </div>
+      <div class="w3-half">
+          <div class="inmore">
+              <iframe src="https://www.youtube.com/embed/9RF36rQsMVc"></iframe>
+          </div>
+      </div>
+      <div class="w3-half">
+          <div class="inmore">
+              <iframe src="https://www.youtube.com/embed/0Zm7FQitLq8"></iframe>
+          </div>
+      </div>
+  </section>
+
+  <!--Display gallery on big screens-->
+  <div class="w3-row w3-hide-small">
+    <div class="w3-third">
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (1).jpg" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (2).jpg" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>  
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (1).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (2).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (3).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (4).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (5).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (6).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (7).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (8).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>  
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (9).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (10).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (11).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (12).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (13).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (14).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (15).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (16).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>  
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (17).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (18).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (19).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (20).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (21).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+      <div class="w3-card">
+        <img src="vmeet/vmeet22 (22).png" onclick="myFunction(this);" class="w3-image w3-round w3-padding-top w3-padding-bottom shakey">
+      </div>
+    </div>
+  </div>
+
+  <!--Display for small screens-->
+  <div class="w3-hide-large w3-hide-medium w3-show-small">
+    <div class="w3-row">
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (1).jpg' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (2).jpg' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (1).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (2).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (3).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (4).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (5).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (6).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (7).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (8).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (9).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (10).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (11).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (12).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (13).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (14).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (15).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (16).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (17).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (18).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (19).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (20).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (21).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+      <div class='w3-quarter'>
+        <div class='w3-card'>
+          <img src='vmeet/vmeet22 (22).png' onclick='myFunction(this);' class='w3-image w3-round w3-padding-top w3-padding-bottom'>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer id="translate" class="w3-center w3-black w3-padding-64 w3-hover-orange">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <h4><b>Chardikala</b></h4>
+    <div id="google_translate_element"></div>
+      <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+          }
+      </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle b/w english and punjabi poster
+    function changePoster() {
+      var poster = document.getElementById("poster");
+      var posterTxt = document.getElementById("posterTxt");
+      if (poster.src.match("punVaisakhiPoster")) {
+        poster.src = "./images/engVaisakhiPoster.jpeg";
+        poster.alt = "poster in English";
+        posterTxt.innerHTML = "Click Image for Punjabi poster!";
+      } else {
+        poster.src = "./images/punVaisakhiPoster.jpeg";
+        poster.alt = "poster in Punjabi";
+        posterTxt.innerHTML = "Click Image for English poster!";
+      }
+    }
+
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    //Used for Punjabits Accordian
+    function accFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.includes("w3-show")) {
+        x.className = x.className.replace(" w3-show", " w3-hide");
+      } else if (x.className.includes("w3-hide")) {
+        x.className = x.className.replace(" w3-hide", " w3-show");
+      } else {
+        x.className += " w3-show"
+      }
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+
+    // function for accordian
+    function myAccord(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+</html>
